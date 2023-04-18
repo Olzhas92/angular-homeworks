@@ -1,7 +1,11 @@
-<div class="form">
+<div class="form" (ngSubmit)="onSubmit()">
   <form>
-    <input type="text" placeholder="Name" />
-    <input type="number" placeholder="Price" />
-    <button type="">Order</button>
+    <input type="text" placeholder="Name" [(ngModel)]="newGoodsName" />
+    <input type="number" placeholder="Price" [(ngModel)]="newGoodsPrice" />
+    <button type="submit">Order</button>
   </form>
+  <div *ngFor="let item of orders">
+    <p>New Goods Name: {{ item.name }}</p>
+    <p>New Goods Price: {{ item.price }}</p>
+  </div>
 </div>
