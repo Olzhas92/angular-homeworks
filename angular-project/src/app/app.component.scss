@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  background-color: lightblue;
+  padding: 0 120px;
+
+  &__title {
+    font-size: 48px;
+    color: red;
+  }
+}
